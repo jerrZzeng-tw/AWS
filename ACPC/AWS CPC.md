@@ -59,8 +59,8 @@ Elastic Load Balancing 是一種可在多個資源 (例如 Amazon EC2 執行個�
 
 ![mvc](img/3-1.png )
 
-- `區域(Regions)` - 各個區域為獨立的地理區域。
-- `可用區域(Availability Zones)` - 可用區域是每個區域內的多個隔離位置。
+- `區域 (Regions)` - 各個區域為獨立的地理區域。
+- `可用區域 (Availability Zones)` - 可用區域是每個區域內的多個隔離位置。
 
 ## 選取區域
 - 符合資料管理和法律要求
@@ -73,7 +73,7 @@ Amazon CloudFront 用`節點`來將您內容的快取副本存放在更靠近客
 ![mvc](img/3-2.png )
 
 ## AWS 管理工具
-- `AWS管理主控台(AWS Management Console)`
+- `AWS管理主控台 (AWS Management Console)`
 - `AWS 命令列界面 (AWS CLI)`
 - `軟體開發套件 (SDK)`
 - `AWS Elastic Beanstalk` - 提供程式碼和組態設定後，自動部署資源(`調整容量`、`負載平衡`、`自動擴展`、`應用程式運作狀態監控`)。
@@ -87,7 +87,7 @@ Amazon CloudFront 用`節點`來將您內容的快取副本存放在更靠近客
 ## AWS Direct Connect(專用私有連線)
 ![mvc](img/4-3.png )
 ## VPC 中的網路流量控管
-- `子網路(Subnets)` - VPC內部可以再切分`公有子網路`、`私有子網路`。
+- `子網路 (Subnets)` - VPC內部可以再切分`公有子網路`、`私有子網路`。
 - `網路存取控制清單 (ACL)` - 作用在子網路上(Subnets)上，`無狀態`，預設允許所有傳入和傳出流量(`黑名單`)。
 - `安全群組` - 作用在EC2上，`狀態`封包篩選，預設拒絕所有傳入流量(`白名單`)，並允許所有傳出流量。
 
@@ -97,7 +97,7 @@ Amazon Route 53 是一種 DNS Web 服務。 這項服務為開發人員和企業
 ![mvc](img/4-5.png )
 
 # 儲存
-- `執行個體存放區(EC2 instance store)` - EC2 卸載資料會`消失`
+- `執行個體存放區 (EC2 instance store)` - EC2 卸載資料會`消失`
 - `Amazon Elastic Block Store (Amazon EBS)` - EC2 卸載資料會`保存`，可建立`EBS快照`進行增量備份。
 - `Amazon Simple Storage Service (Amazon S3)` - `物件層級`，每個物件均由資料、中繼資料和一組金鑰組成。提供多種儲存類別。
 - `Amazon Elastic File System (Amazon EFS)` - `檔案層級`，與區塊儲存和物件儲存相比，檔案儲存非常適合需要同時存取相同資料的大量服務和資源的使用案例。
@@ -112,7 +112,12 @@ EBS 只能在`同區域(Regions)` 的EC2，EFS 可以跨多個`區域(Regions)`
 - `S3 Intelligent-Tiering` - 適合存取模式未知或持續變更的資料，30天未存取搬移到Standard-IA。Standard-IA 資料被存取搬移到S3 Standard。
 - `S3 Glacier` - 資料封存用，能夠在幾分鐘到幾小時內擷取物件，成本低。
 - `S3 Glacier Deep Archive` - 資料封存用，能夠在 12 小時內擷取物件，成本最低。
-
+- `AWS Snow 系列` - 是實體裝置的集合，可協助以實體方式將 EB 級資料輸出入 AWS。
+  - Snowcone  - 是小型、堅固且安全的邊緣運算與資料傳輸裝置。
+  - Snowball
+    - Snowball Edge Storage Optimized - 非常適用於大規模資料遷移以及週期性傳輸工作流程，與具較高容量需求的本機運算。
+    - Snowball Edge Compute Optimized - 為機器學習、全動態影片分析、分析以及本機運算堆疊提供了強大的運算資源。
+  - AWS Snowmobile - 可傳輸高達 100 PB 的資料。
 # 資料庫
 - `Amazon Relational Database Service (Amazon RDS)` - 關聯式資料庫。
   - Amazon Aurora - AWS自家關聯式資料庫。與 MySQL 和 PostgreSQL 相容。
@@ -163,3 +168,41 @@ EBS 只能在`同區域(Regions)` 的EC2，EFS 可以跨多個`區域(Regions)`
   - `CloudTrail Insights` - 選用功能，可讓 CloudTrail 自動偵測 AWS 帳戶中不尋常的 API 活動。 
 - `AWS Trusted Advisor` - 檢查您的 AWS 環境，並根據 AWS 最佳實務提供即時建議。
   - `AWS Trusted Advisor 儀表板` - 檢閱`成本最佳化`、`效能`、`安全`、`容錯能力`、`服務限制`的完整檢查。
+
+# 定價
+- `AWS 免費方案`
+  - 永遠免費。
+  - 12 個月免費。
+  - 試用。
+- `AWS 定價` 
+  - 按實際用量付費。
+  - 預留容量，付費越少。
+  - 以量計算的折扣，讓您用量越多付費越少。
+- `AWS 定價計算器` - 讓您可以探索 AWS 服務，並為您在 AWS 的使用案例成本建立評估。
+- `AWS 帳單儀表板 (AWS Billing)` - 支付 AWS 帳單、監控用量，以及分析和控制成本。
+- `合併帳單 (Consolidated Billing)` - 能在組織中帳戶中共用大量折扣定價、Savings Plans 和預留執行個體。
+- `AWS 預算 (AWS Budgets)`- 建立預算來規劃服務用量、服務成本和執行個體保留。用量超過 (或預測會超過) 預算金額時設定`自訂提醒`。
+- `AWS 成本總管 (Cost Explorer)` - 了解和管理隨著時間推進 AWS 成本和用量的工具。
+
+# AWS Support 計劃
+![mvc](img/8-1.png)
+- AWS Marketplace - 使用 AWS Marketplace 尋找、測試和購買能在 AWS 上執行的軟體。 
+
+# 遷移 
+CPC不會考,可幫助理解該如何將專案轉移到雲端
+- `AWS Cloud Adoption Framework (AWS CAF)` - 遷移指引
+  - 業務觀點 - 確保 IT 符合業務需求，讓 IT 投資可連結至關鍵業務成果。
+  - 人員觀點 - 支援開發整個組織的變更管理策略，以確保成功採用雲端。
+  - 治理觀點 - 著重於技能和流程，使 IT 策略與業務策略一致。這可以確保您將業務價值最大化，並將風險降至最低。
+  - 平台觀點 - 包括在雲端上實作新解決方案，以及將內部部署工作負載遷移至雲端的原則和模式。
+  - 安全觀點 - 可確保組織符合可見性、可稽核性、控制和敏捷性的安全目標。
+  - 營運觀點 - 可協助您啟動、執行、使用、操作及恢復 IT 工作負載，達到與商業利益關係人說好的程度。
+- `遷移策略`
+  - 重新託管 - 不用修改。
+  - 平台重建 - 小改。
+  - 重構/重新架構 - 用雲端原生功能重寫。
+  - 重新購買 - 改買產品。
+  - 保留 - 不轉移到雲端。
+  - 淘汰 - 可以移除的功能。
+
+
