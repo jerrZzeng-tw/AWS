@@ -79,6 +79,8 @@ Amazon CloudFront 用`節點`來將您內容的快取副本存放在更靠近客
 - `AWS CloudFormation` - 將基礎設施當作程式碼來處理。透過撰寫程式碼行來建立環境，無需使用 AWS 管理主控台個別佈建資源。
 
 # 網路功能
+Amazon Virtual Private Cloud (Amazon VPC) - 邏輯隔離虛擬網路中啟動 AWS 資源。
+![mvc](img/VPC.png )
 ## 公開網路連線
 ![mvc](img/4-1.png )
 ## VPN連線
