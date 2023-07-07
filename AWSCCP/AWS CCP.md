@@ -104,7 +104,7 @@ Amazon Route 53 是一種 DNS Web 服務。 這項服務為開發人員和企業
 - `Amazon Elastic File System (Amazon EFS)` - `檔案層級`，與區塊儲存和物件儲存相比，檔案儲存非常適合需要同時存取相同資料的大量服務和資源的使用案例。
 
 ## Amazon EBS 和 Amazon EFS 差異
-EBS 只能在`同區域(Regions)` 的EC2，EFS 可以跨多個`區域(Regions)`
+EBS 只能在`可用區域 (Availability Zones)` 的EC2，EFS 可以跨多個`可用區域 (Availability Zones)`
 
 ## Amazon S3 種類
 - `S3 Standard` - 經常存取、備份三個可用區域、成本較高。
