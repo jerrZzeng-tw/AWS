@@ -47,7 +47,7 @@ Elastic Load Balancing 是一種可在多個資源 (例如 Amazon EC2 執行個�
 ## AWS 內建服務
 - `Amazon Simple Notification Service (Amazon SNS)` - 發布/訂閱服務，將訊息發布給訂閱者。
 - `Amazon Simple Queue Service (Amazon SQS)` - 訊息佇列服務，應用程式會將訊息傳送到佇列中。使用者或服務會從佇列擷取訊息。
-- `AWS Lambda` - 無需佈建或管理伺服器即可執行程式碼的服務，只需根據所用運算時間付費。
+- `AWS Lambda` - `無伺服器`、`事件推動`的運算服務，無需佈建或管理伺服器即可執行程式碼的服務，只需根據所用運算時間付費。
 - `Amazon Elastic Container Service (Amazon ECS)` - 可高度擴展的高效能容器管理系統，支援 `Docker` 容器。
 - `Amazon Elastic Kubernetes Service (Amazon EKS)` -  AWS 上執行 `Kubernetes`。
 - `AWS Fargate` - 是無伺服器，依用量計費的運算引擎，讓您專注於建置應用程式，而無需管理伺服器。AWS Fargate 與 Amazon Elastic Container Service (ECS) 和 Amazon Elastic Kubernetes Service (EKS) 相容。
@@ -58,8 +58,8 @@ Elastic Load Balancing 是一種可在多個資源 (例如 Amazon EC2 執行個�
 
 ![mvc](img/3-1.png )
 
-- `區域 (Regions)` - 各個區域為獨立的地理區域。
-- `可用區域 (Availability Zones)` - 可用區域是每個區域內的多個隔離位置。
+- `區域 (Regions)` - 獨立的`地理區域`。
+- `可用區域 (Availability Zones)` - 每個`區域`內的多個`隔離位置`。
 
 ## 選取區域
 - 符合資料管理和法律要求
@@ -164,8 +164,8 @@ EBS只能在一個EC2上使用，EFS 可以跨多個`可用區域 (Availability 
   - `AWS Shield Advanced` - 付費服務，可提供詳細的攻擊診斷，和偵測與減輕複雜的 DDoS 攻擊。 
 - `AWS Key Management Service (AWS KMS)` - 建立、管理和使用加密金鑰。
 - `AWS WAF` - Web 應用程式防火牆，可讓您監控進入 Web 應用程式的網路要求。 
-- `Amazon Inspector` - 自動化安全評定，檢查應用程式是否存在安全漏洞，以及與安全最佳實務之間的差異。
-- `Amazon GuardDuty` - 監控 AWS 環境中的網路活動和帳戶行為識別威脅。
+- `Amazon Inspector` - 自動安全評估服務，有助於提高部署在 AWS 上的應用程序的安全性和合規性。`自動評估應用程序的風險`、`漏洞`和與最佳實踐的偏差。
+- `Amazon GuardDuty` - 威脅檢測服務，可以`持續監控惡意`或`未經授權的行為`，以幫助您保護您的 AWS 賬戶和工作負載。
 
 # 監控和分析
 - `Amazon CloudWatch` - 監控和管理各種指標，並根據這些指標的資料設定警示動作。
