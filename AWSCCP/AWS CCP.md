@@ -144,6 +144,12 @@ EBS只能在一個EC2上使用，EFS 可以跨多個`可用區域 (Availability 
 - `Amazon ElastiCache` - 資料庫快取層，能夠協助改善常見要求的讀取時間。支援 `Redis` 和 `Memcached`。
 - `Amazon DynamoDB Accelerator (DAX)` - DynamoDB 的記憶體內快取。改善回應時間，從不到 10 毫秒縮短到數微秒。
 
+## AWS Storage Gateway
+AWS Storage Gateway 是一種混合雲端儲存服務，提供接近無限的雲端儲存內部部署存取。
+- 標準儲存通訊協定 - Storage Gateway 使用 NFS、SMB、iSCSI 或 iSCSI-VTL 無縫連接本機生產或備份應用程式。
+- 全受管快取 - 本機閘道設備會保留最近寫入或讀取之資料的快取，讓您的應用程式可透過低延遲的方式存取長期存放在 AWS 的資料。
+- 優化和保全資料傳輸 - Storage Gateway 使用 SSL 安全地上傳變更的資料和下載請求的資料，以及加密任何閘道設備類型和 AWS 之間傳輸的資料。
+
 # 安全責任
 ## 共同責任模型(Shared Responsibility Model)
 - 客戶 - 必須負責在 AWS 雲端中建立和放置的所有內容的安全。
