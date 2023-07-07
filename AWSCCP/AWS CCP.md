@@ -173,8 +173,12 @@ EBS只能在一個EC2上使用，EFS 可以跨多個`可用區域 (Availability 
   - `CloudWatch 儀表板` - 從單一位置存取資源的所有指標。
 - `AWS CloudTrail` - 記錄帳戶的 API 呼叫。包括 API 呼叫者的身分、API 呼叫的時間、API 呼叫者的來源 IP 位址等。
   - `CloudTrail Insights` - 選用功能，可讓 CloudTrail 自動偵測 AWS 帳戶中不尋常的 API 活動。 
-- `AWS Trusted Advisor` - 檢查您的 AWS 環境，並根據 AWS 最佳實務提供即時建議。
-  - `AWS Trusted Advisor 儀表板` - 檢閱`成本最佳化`、`效能`、`安全`、`容錯能力`、`服務限制`的完整檢查。
+- `AWS Trusted Advisor` - AWS Trusted Advisors 提供可幫助您遵循 AWS 最佳實踐的建議。優化您的服務和資源。 。
+  - `成本最佳化 (Cost optimization)`  - 透過`分析用量`、`組態`和`支出`，採用可行的推薦來協助您`節省成本`。範例包括識別空閒的 RDS 資料庫執行個體、未充分利用的 EBS 磁碟區、未關聯的彈性 IP 地址，以及 Lambda 函數中的過多逾時。
+  - `效能 (Performance)` - 透過分析用量和組態，提供可行的推薦來協助改善服務效能。範例包括分析 EBS 輸送量和延遲、EC2 執行個體的運算用量，以及 CloudFront 上的組態。
+  - `安全性 (Security)` - 透過推薦由安全專家策管的基本安全最佳實務，來協助改善 AWS 環境的安全性。範例識別 RDS 安全群組存取風險、存取資料外洩和不必要的 S3 儲存貯體許可。
+  - `容錯能力 (Fault tolerance)` - 協助您`改善服務的可靠性`。範例包括檢查 Auto Scaling EC2 群組、刪除 Route 53 上的運作狀態檢查、停用可用區域，以及停用 RDS 備份。
+  - `服務配額/服務限制 (Service quotas / Service limit)` - 服務配額意指您可以在 AWS 帳戶中建立的資源數量上限。 AWS 實作配額為所有客戶提供高度可用且可靠的服務，並讓您免於支付不必要的開支。如果您達到超過 `80% 的服務配額`，則 Trusted Advisor 會`通知`您。然後，您可以按照推薦刪除資源或請求增加配額。此值取決於快照，所以您目前的用量可能有所不同。限制和用量資料最多可能需要 24 小時才能反映任何變更。
 
 # 定價
 - `AWS 免費方案`
