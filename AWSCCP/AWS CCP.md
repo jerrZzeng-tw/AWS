@@ -98,14 +98,15 @@ Amazon Route 53 是一種 DNS Web 服務。 這項服務為開發人員和企業
 ![mvc](img/4-5.png )
 
 # 儲存
-單一EC2 
+EC2 
 - `執行個體存放區 (EC2 instance store)` - EC2 卸載資料會`消失`。
 - `Amazon Elastic Block Store (Amazon EBS)` - EC2 卸載資料會`保存`，可建立`EBS快照`進行增量備份。 
 
-跨EC2
-
-- `Amazon Simple Storage Service (Amazon S3)` - `物件層級`，每個物件均由資料、中繼資料和一組金鑰組成。提供多種儲存類別。
+跨AZ
 - `Amazon Elastic File System (Amazon EFS)` - `檔案層級`，與區塊儲存和物件儲存相比，檔案儲存非常適合需要同時存取相同資料的大量服務和資源的使用案例。
+
+跨Regions
+- `Amazon Simple Storage Service (Amazon S3)` - `物件層級`，每個物件均由資料、中繼資料和一組金鑰組成。提供多種儲存類別。
 
 ## Amazon EBS 和 Amazon EFS 差異
 EBS只能在一個EC2上使用，EFS 可以跨多個`可用區域 (Availability Zones)`，同時讓多個EC2使用。
