@@ -200,7 +200,7 @@ EBS只能在一個EC2上使用，EFS 可以跨多個`可用區域 (Availability 
 - AWS Marketplace - 使用 AWS Marketplace 尋找、測試和購買能在 AWS 上執行的軟體。 
 
 # 遷移 
-CPC不會考,可幫助理解該如何將專案轉移到雲端
+CCP不會考,可幫助理解該如何將專案轉移到雲端
 - `AWS Cloud Adoption Framework (AWS CAF)` - 遷移指引
   - 業務觀點 - 確保 IT 符合業務需求，讓 IT 投資可連結至關鍵業務成果。
   - 人員觀點 - 支援開發整個組織的變更管理策略，以確保成功採用雲端。
