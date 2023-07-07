@@ -113,12 +113,12 @@ EBS只能在一個EC2上使用，EFS 可以跨多個`可用區域 (Availability 
 ![mvc](img/EFS.png )
 
 ## Amazon S3 種類
-- `S3 Standard` - 經常存取、備份三個可用區域、成本較高。
-- `S3 Standard-IA` - 不常存取、備份三個可用區域、儲存價格低、擷取價格高。
-- `S3 One Zone-IA` - 不常存取、一個可用區域、儲存價格比 Standard-IA 低、存放可輕易復原的資料。
-- `S3 Intelligent-Tiering` - 適合存取模式未知或持續變更的資料，30天未存取搬移到Standard-IA。Standard-IA 資料被存取搬移到S3 Standard。
-- `S3 Glacier` - 資料封存用，能夠在幾分鐘到幾小時內擷取物件，成本低。
-- `S3 Glacier Deep Archive` - 資料封存用，能夠在 12 小時內擷取物件，成本最低。
+- `S3 Standard` - 經常存取、資料同時存放`三個`可用區域、成本較高。
+- `S3 Standard-IA` - 不常存取、資料同時存放`三個`可用區域、儲存價格低、擷取價格高。
+- `S3 One Zone-IA` - 不常存取、資料只放在`一個`可用區域、儲存價格比 Standard-IA 低、存放可輕易復原的資料。
+- `S3 Intelligent-Tiering` - 適合存取模式未知或持續變更的資料，`30天`未存取搬移到Standard-IA。Standard-IA 資料被存取搬移到S3 Standard。
+- `S3 Glacier` - 資料封存用，能夠在`幾分鐘到幾小時`內擷取物件，成本低。
+- `S3 Glacier Deep Archive` - 資料封存用，能夠在` 12 小時`內擷取物件，成本最低。
 - `AWS Snow 系列` - 是實體裝置的集合，可協助以實體方式將 EB 級資料輸出入 AWS。
   - Snowcone  - 是小型、堅固且安全的邊緣運算與資料傳輸裝置。
   - Snowball
