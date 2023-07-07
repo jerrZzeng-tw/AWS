@@ -1,7 +1,5 @@
 # AWS Cloud Practitioner
 # Amazon Web Services簡介
-## 用戶端 - 伺服器模型
-![mvc](img/1-1.png )
 
 ### 雲端運算的部署模型
 
