@@ -165,7 +165,7 @@ AWS Storage Gateway 是一種混合雲端儲存服務，提供接近無限的雲
 ![mvc](img/6-1.png)
 
 ## 其他安全功能
-- `Identity and Access Management (IAM)` - 管理 AWS 服務與資源的存取權。
+- `Identity and Access Management (IAM)` - 管理 AWS 服務與資源的存取權。可用 `Access keys` 提供程式化管理
   - `IAM` - 可設定：使用者、群組、角色
   - `IAM 政策` - 允許或拒絕 AWS 服務和資源許可的文件。
   - `Multi-Factor Authentication (MFA)` - 多重因素驗證
@@ -217,7 +217,19 @@ AWS Storage Gateway 是一種混合雲端儲存服務，提供接近無限的雲
 
 # AWS Support 計劃
 ![mvc](img/8-1.png)
-- AWS Marketplace - 使用 AWS Marketplace 尋找、測試和購買能在 AWS 上執行的軟體。 
+
+# 其他功能
+- AWS Marketplace - 使用 AWS Marketplace 尋找、測試和購買能在 AWS 上執行的軟體。  
+- Total Cost of Ownership (Cloud TCO) - 提供企業比較本地跟aws成本差異
+- AWS Directory Service - AWS SSO Tool
+- AWS Cost and Usage report - bthe most granular data about your AWS costs and usage
+- Amazon Machine Image - a pre-configured Amazon Elastic Compute Cloud (Amazon EC2) instance
+- Service Health Dashboard - the generic status of overall AWS services 
+- Personal Health Dashboard - provides status of services pertaining to "subscribed" AWS services.客製化
+- AWS OpsWorks - lets you use Chef and Puppet to automate how servers are configured, deployed, and managed across your Amazon EC2 instances or `on-premises compute environments`
+- AWS CodeDeploy -  is a fully managed deployment service that automates software deployments to a variety of compute services such as Amazon EC2, AWS Fargate, AWS Lambda, and your `on-premises servers`.
+- AWS Config - a service that enables you to assess, audit, and evaluate the configurations of your AWS resources.
+- AWS CloudFormation - provides a common language for you to describe and provision all the infrastructure resources in your cloud environment. CloudFormation allows you to use a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts. This file serves as the single source of truth for your cloud environment.
 
 # 遷移 
 CCP不會考,可幫助理解該如何將專案轉移到雲端
