@@ -37,7 +37,7 @@ Amazon Elastic Compute Cloud (Amazon EC2) 是一種 Web 服務，可在雲端提
 - `Amazon EC2 Savings Plans` - 承諾在 1 年或 3 年期限內維持一致的運算用量，以此降低運算成本。這種限期承諾比起隨需付費，可節省高達 72% 的成本。
 - `預留執行個體` - 一種計費折扣方式，依您帳戶中的隨需執行個體用量而定。
 - `Spot執行個體` - 適合啟動和結束時間較彈性或可承受中斷的工作負載。Spot 執行個體利用未使用的 Amazon EC2 運算容量，節省最多達 90% 的成本。
-- `專用主機` - 完全專供您使用且含有 Amazon EC2 執行個體容量的實體伺服器。 
+- `專用主機(Dedicated Hosts)` - 完全專供您使用且含有 Amazon EC2 執行個體容量的實體伺服器。 
 
 ## Amazon EC2 Auto Scaling
 在 Amazon EC2 Auto Scaling 中，您可以使用兩種方法：動態擴展和預測性擴展。
@@ -175,7 +175,7 @@ AWS Storage Gateway 是一種混合雲端儲存服務，提供接近無限的雲
 ![mvc](img/6-1.png)
 
 ## 其他安全功能
-- `Identity and Access Management (IAM)` - 管理 AWS 服務與資源的存取權。可用 `Access keys` 提供程式化管理
+- `Identity and Access Management (IAM)` - 管理 AWS 服務與資源的存取權。可用 `Access keys 物件(包含 access key ID + secret access key)` 提供程式化管理
   - `IAM` - 可設定：使用者、群組、角色
   - `IAM 政策` - 允許或拒絕 AWS 服務和資源許可的文件。
   - `Multi-Factor Authentication (MFA)` - 多重因素驗證
@@ -218,6 +218,7 @@ AWS Storage Gateway 是一種混合雲端儲存服務，提供接近無限的雲
 - `合併帳單 (Consolidated Billing)` - 能在組織中帳戶中`共用大量折扣`定價、Savings Plans 和預留執行個體。
 - `AWS 預算 (AWS Budgets)`- 建立`預算來規劃`服務用量、服務成本和執行個體保留。用量超過 (或預測會超過) 預算金額時設定`自訂提醒`。
 - `AWS 成本總管 (Cost Explorer)` - 了解和管理`隨著時間推進` AWS 成本和用量的工具。
+- `Total Cost of Ownership (Cloud TCO)` - 提供企業比較`本地資料中心(on-premises)`跟遷移到`AWS`的成本差異工具。
 
 ## Amazon EC2 預留執行個體(Amazon EC2 Reserved Instances)
 相較於隨需定價，Amazon EC2 預留執行個體 (RI) 提供了大幅折扣 (最高可達 72%)，並在特定的可用區域使用時提供容量保留功能。
@@ -230,7 +231,7 @@ AWS Storage Gateway 是一種混合雲端儲存服務，提供接近無限的雲
 
 # 其他功能
 - AWS Marketplace - 使用 AWS Marketplace 尋找、測試和購買能在 AWS 上執行的軟體。  
-- Total Cost of Ownership (Cloud TCO) - 提供企業比較本地跟aws成本差異
+
 - AWS Directory Service - AWS SSO Tool
 
 # 少考
@@ -238,13 +239,18 @@ AWS Storage Gateway 是一種混合雲端儲存服務，提供接近無限的雲
 - Amazon Machine Image - a pre-configured Amazon Elastic Compute Cloud (Amazon EC2) instance
 - Service Health Dashboard - the generic status of overall AWS services 
 - Personal Health Dashboard - provides status of services pertaining to "subscribed" AWS services.客製化
-- AWS OpsWorks - lets you use Chef and Puppet to automate how servers are configured, deployed, and managed across your Amazon EC2 instances or `on-premises compute environments`
-- AWS CodeDeploy -  is a fully managed deployment service that automates software deployments to a variety of compute services such as Amazon EC2, AWS Fargate, AWS Lambda, and your `on-premises servers`.
+- AWS OpsWorks - 讓您使用程式碼自動設定伺服器組態的自動化平台。 lets you use Chef and Puppet to automate how servers are configured, deployed, and managed across your Amazon EC2 instances or `on-premises compute environments`
+- AWS CodeDeploy - 自動部屬工具。 a fully managed deployment service that automates software deployments to a variety of compute services such as Amazon EC2, AWS Fargate, AWS Lambda, and your `on-premises servers`.
 - AWS Config - a service that enables you to assess, audit, and evaluate the configurations of your AWS resources.
 - AWS CloudFormation - provides a common language for you to describe and provision all the infrastructure resources in your cloud environment. CloudFormation allows you to use a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts. This file serves as the single source of truth for your cloud environment.
 - Amazon Rekognition - 只需提供影像或影片至 Amazon Rekognition API，服務即可辨識物件、人物、文字、場景與活動。也可偵測到任何不當內容。Amazon Rekognition 還提供高度精準的臉部分析、臉部比較與臉部搜尋功能。您可以偵測、分析及比對各種使用案例的臉部，包括驗證使用者、建立目錄、計算人數和公共安全。
 - AWS CloudHSM (Hardware Security Module) - helps you meet corporate, contractual, and regulatory compliance requirements for data security by using dedicated Hardware Security Module (HSM) instances within the AWS cloud.
-  
+- Amazon Transcribe - 將語音轉換為文字
+- Amazon Comprehend - 發現文字中的模式
+- Amazon Fraud Detector - 識別潛在的線上詐騙活動
+- Amazon Lex - 建立語音和文字 Chatbot
+- SageMake - 快速建立、培訓和部署 機器學習(ML) 模型
+
 # 遷移 
 CCP不會考,可幫助理解該如何將專案轉移到雲端
 ## AWS Cloud Adoption Framework (AWS CAF) 遷移指引
