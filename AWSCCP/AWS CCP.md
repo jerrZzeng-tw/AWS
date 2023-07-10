@@ -218,7 +218,7 @@ AWS Storage Gateway 是一種混合雲端儲存服務，提供接近無限的雲
 # AWS Support 計劃
 ![mvc](img/8-1.png)
 
-# 其他功能
+# 其他功能(少量出題)
 - AWS Marketplace - 使用 AWS Marketplace 尋找、測試和購買能在 AWS 上執行的軟體。  
 - Total Cost of Ownership (Cloud TCO) - 提供企業比較本地跟aws成本差異
 - AWS Directory Service - AWS SSO Tool
@@ -230,7 +230,9 @@ AWS Storage Gateway 是一種混合雲端儲存服務，提供接近無限的雲
 - AWS CodeDeploy -  is a fully managed deployment service that automates software deployments to a variety of compute services such as Amazon EC2, AWS Fargate, AWS Lambda, and your `on-premises servers`.
 - AWS Config - a service that enables you to assess, audit, and evaluate the configurations of your AWS resources.
 - AWS CloudFormation - provides a common language for you to describe and provision all the infrastructure resources in your cloud environment. CloudFormation allows you to use a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts. This file serves as the single source of truth for your cloud environment.
+- Amazon Rekognition - 只需提供影像或影片至 Amazon Rekognition API，服務即可辨識物件、人物、文字、場景與活動。也可偵測到任何不當內容。Amazon Rekognition 還提供高度精準的臉部分析、臉部比較與臉部搜尋功能。您可以偵測、分析及比對各種使用案例的臉部，包括驗證使用者、建立目錄、計算人數和公共安全。
 
+  
 # 遷移 
 CCP不會考,可幫助理解該如何將專案轉移到雲端
 ## AWS Cloud Adoption Framework (AWS CAF) 遷移指引
