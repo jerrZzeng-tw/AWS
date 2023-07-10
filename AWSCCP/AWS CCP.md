@@ -132,7 +132,7 @@ EBS只能在一個EC2上使用，EFS 可以跨多個`可用區域 (Availability 
   - Snowball
     - Snowball Edge Storage Optimized - 非常適用於大規模資料遷移以及週期性傳輸工作流程，與具較高容量需求的本機運算。
     - Snowball Edge Compute Optimized - 為機器學習、全動態影片分析、分析以及本機運算堆疊提供了強大的運算資源。
-  - AWS Snowmobile - 可傳輸高達 100 PB 的資料。
+  - AWS Snowmobile - 可傳輸高達 100 PB(Exabyte EB 級別) 的資料。
 # 資料庫
 - `Amazon Relational Database Service (Amazon RDS)` - 關聯式資料庫。
   - Amazon Aurora - AWS自家關聯式資料庫。與 MySQL 和 PostgreSQL 相容。
