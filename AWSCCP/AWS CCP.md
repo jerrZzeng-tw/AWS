@@ -93,7 +93,8 @@ AWS Global Accelerator 和 Amazon CloudFront 是兩種獨立的服務，都使�
 - `AWS CloudFormation` - 將基礎設施當作程式碼來處理。透過撰寫程式碼行來建立環境，無需使用 AWS 管理主控台個別佈建資源。
 
 # 網路功能
-Amazon Virtual Private Cloud (Amazon VPC) - 邏輯隔離虛擬網路中啟動 AWS 資源。
+Amazon Virtual Private Cloud (Amazon VPC) - 邏輯隔離虛擬網路中啟動 AWS 資源。提供 `VPC Flow Logs` 紀錄進出VPC的IP資訊。
+
 ![mvc](img/VPC.png )
 ## 公開網路連線
 ![mvc](img/4-1.png )
@@ -227,10 +228,12 @@ AWS Storage Gateway 是一種混合雲端儲存服務，提供接近無限的雲
 # AWS Support 計劃
 ![mvc](img/8-1.png)
 
-# 其他功能(少量出題)
+# 其他功能
 - AWS Marketplace - 使用 AWS Marketplace 尋找、測試和購買能在 AWS 上執行的軟體。  
 - Total Cost of Ownership (Cloud TCO) - 提供企業比較本地跟aws成本差異
 - AWS Directory Service - AWS SSO Tool
+
+# 少考
 - AWS Cost and Usage report - bthe most granular data about your AWS costs and usage
 - Amazon Machine Image - a pre-configured Amazon Elastic Compute Cloud (Amazon EC2) instance
 - Service Health Dashboard - the generic status of overall AWS services 
@@ -240,7 +243,7 @@ AWS Storage Gateway 是一種混合雲端儲存服務，提供接近無限的雲
 - AWS Config - a service that enables you to assess, audit, and evaluate the configurations of your AWS resources.
 - AWS CloudFormation - provides a common language for you to describe and provision all the infrastructure resources in your cloud environment. CloudFormation allows you to use a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts. This file serves as the single source of truth for your cloud environment.
 - Amazon Rekognition - 只需提供影像或影片至 Amazon Rekognition API，服務即可辨識物件、人物、文字、場景與活動。也可偵測到任何不當內容。Amazon Rekognition 還提供高度精準的臉部分析、臉部比較與臉部搜尋功能。您可以偵測、分析及比對各種使用案例的臉部，包括驗證使用者、建立目錄、計算人數和公共安全。
-
+- AWS CloudHSM (Hardware Security Module) - helps you meet corporate, contractual, and regulatory compliance requirements for data security by using dedicated Hardware Security Module (HSM) instances within the AWS cloud.
   
 # 遷移 
 CCP不會考,可幫助理解該如何將專案轉移到雲端
