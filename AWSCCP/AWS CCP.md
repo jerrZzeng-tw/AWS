@@ -78,6 +78,13 @@ Elastic Load Balancing 是一種可在多個資源 (例如 Amazon EC2 執行個�
 Amazon CloudFront 用`節點`來將您內容的快取副本存放在更靠近客戶位置的站點，以便加快交付。
 ![mvc](img/3-2.png )
 
+## AWS Global Accelerator
+AWS Global Accelerator 是一種網路服務，可協助您提高公開應用程式的可用性、效能和安全性。
+![mvc](img/3-3.png )
+
+## AWS Global Accelerator 與 Amazon CloudFront 有何不同
+AWS Global Accelerator 和 Amazon CloudFront 是兩種獨立的服務，都使用 AWS 全域網路及其全球節點。CloudFront 同時改進了可快取內容 (例如，影像和影片) 和動態內容 (例如，API 加速和動態網站交付) 的效能。Global Accelerator 可透過 TCP 或 UDP 提高各種應用程式的效能，方式是將邊緣的封包代理至一或多個 AWS 區域中執行的應用程式。Global Accelerator 非常適用於非 HTTP 使用案例，如遊戲 (UDP)、IoT (MQTT) 或 IP 語音，也非常適用於特別需要靜態 IP 地址或確定性快速區域容錯移轉的 HTTP 使用案例。這兩種服務與 AWS Shield 整合來提供 DDoS 防護。
+
 ## AWS 管理工具
 - `AWS管理主控台 (AWS Management Console)`
 - `AWS 命令列界面 (AWS CLI)`
@@ -103,6 +110,8 @@ Amazon Virtual Private Cloud (Amazon VPC) - 邏輯隔離虛擬網路中啟動 AW
 ## Amazon Route 53 
 Amazon Route 53 是一種 DNS Web 服務。 這項服務為開發人員和企業提供可靠的方式，將最終使用者路由到 AWS 託管的網際網路應用程式。
 ![mvc](img/4-5.png )
+
+
 
 # 儲存
 EC2 
