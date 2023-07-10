@@ -2,12 +2,12 @@
 # Amazon Web Services簡介
 ## AWS Well-Architected
 雲端設計和執行的工作負載關鍵概念、設計原則和架構最佳實務。
-- 卓越營運(Operational Excellence) - 執行和監控系統，並持續改善流程與程序。
-- 安全性(Security) - 保護資訊與系統。重要主題包括資料機密性與完整性，管理使用者許可，以及建立控制來偵測安全事件。
-- 可靠性(Reliability) - 執行其預期功能的工作負載以及如何從故障中快速恢復以滿足需求。
-- 效能效率(Performance Efficiency) - IT 和運算資源的結構化和精簡分配。
-- 成本最佳化(Cost Optimization) - 專注於避免不必要的成本。
-- 永續發展(Sustainability) - 執行雲端工作負載的環境影響降至最低。
+- `卓越營運(Operational Excellence)` - 執行和監控系統，並持續改善流程與程序。
+- `安全性(Security)` - 保護資訊與系統。重要主題包括資料機密性與完整性，管理使用者許可，以及建立控制來偵測安全事件。
+- `可靠性(Reliability)` - 執行其預期功能的工作負載以及如何從故障中快速恢復以滿足需求。
+- `效能效率(Performance Efficiency)` - IT 和運算資源的結構化和精簡分配。
+- `成本最佳化(Cost Optimization)` - 專注於避免不必要的成本。
+- `永續發展(Sustainability)` - 執行雲端工作負載的環境影響降至最低。
 
 ## 雲端運算的部署模型
 - `雲端部署` - 在雲端中執行完整的應用程式。 
