@@ -233,19 +233,19 @@ AWS Storage Gateway 是一種混合雲端儲存服務，提供接近無限的雲
 ![mvc](img/8-1.png)
 
 # 其他功能
-- AWS Marketplace - 使用 AWS Marketplace 尋找、測試和購買能在 AWS 上執行的軟體。  
-
+- AWS Marketplace - 使用 AWS Marketplace 尋找、測試和購買能在 AWS 上執行的軟體。
 - AWS Directory Service - AWS SSO Tool
+- AWS Config - a service that enables you to assess, audit, and evaluate the configurations of your AWS resources.
+- AWS CloudFormation - provides a common language for you to describe and provision all the infrastructure resources in your cloud environment. CloudFormation allows you to use a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts. This file serves as the single source of truth for your cloud environment.
+- AWS OpsWorks - 讓您使用程式碼自動設定伺服器組態的自動化平台。 lets you use Chef and Puppet to automate how servers are configured, deployed, and managed across your Amazon EC2 instances or `on-premises compute environments`
+- AWS CodeDeploy - 自動部屬工具。 a fully managed deployment service that automates software deployments to a variety of compute services such as Amazon EC2, AWS Fargate, AWS Lambda, and your `on-premises servers`.
 
 # 少考
 - AWS Cost and Usage report - bthe most granular data about your AWS costs and usage
+- AWS CodeCommit - AWS 提供的程式碼版本控制工具
 - Amazon Machine Image - a pre-configured Amazon Elastic Compute Cloud (Amazon EC2) instance
 - Service Health Dashboard - the generic status of overall AWS services 
 - Personal Health Dashboard - provides status of services pertaining to "subscribed" AWS services.客製化
-- AWS OpsWorks - 讓您使用程式碼自動設定伺服器組態的自動化平台。 lets you use Chef and Puppet to automate how servers are configured, deployed, and managed across your Amazon EC2 instances or `on-premises compute environments`
-- AWS CodeDeploy - 自動部屬工具。 a fully managed deployment service that automates software deployments to a variety of compute services such as Amazon EC2, AWS Fargate, AWS Lambda, and your `on-premises servers`.
-- AWS Config - a service that enables you to assess, audit, and evaluate the configurations of your AWS resources.
-- AWS CloudFormation - provides a common language for you to describe and provision all the infrastructure resources in your cloud environment. CloudFormation allows you to use a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts. This file serves as the single source of truth for your cloud environment.
 - Amazon Rekognition - 只需提供影像或影片至 Amazon Rekognition API，服務即可辨識物件、人物、文字、場景與活動。也可偵測到任何不當內容。Amazon Rekognition 還提供高度精準的臉部分析、臉部比較與臉部搜尋功能。您可以偵測、分析及比對各種使用案例的臉部，包括驗證使用者、建立目錄、計算人數和公共安全。
 - AWS CloudHSM (Hardware Security Module) - helps you meet corporate, contractual, and regulatory compliance requirements for data security by using dedicated Hardware Security Module (HSM) instances within the AWS cloud.
 - Amazon Transcribe - 將語音轉換為文字
