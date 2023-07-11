@@ -134,6 +134,7 @@ EBS只能在一個EC2上使用，EFS 可以跨多個`可用區域 (Availability 
 ![mvc](img/EFS.png )
 
 ## Amazon S3 種類
+Amazon S3 是一個`物件`儲存服務，提供領先業界的可擴展性、資料可用性、安全性及效能。可用`Athena`用SQL查詢S3中的資料。
 - `S3 Standard` - 經常存取、資料同時存放`三個`可用區域、成本較高。
 - `S3 Standard-IA` - 不常存取、資料同時存放`三個`可用區域、儲存價格低、擷取價格高。
 - `S3 One Zone-IA` - 不常存取、資料只放在`一個`可用區域、儲存價格比 Standard-IA 低、存放可輕易復原的資料。
