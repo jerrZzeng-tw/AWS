@@ -93,9 +93,12 @@ AWS Global Accelerator 和 Amazon CloudFront 是兩種獨立的服務，都使�
 - `AWS CloudFormation` - 將基礎設施當作程式碼來處理。透過撰寫程式碼行來建立環境，無需使用 AWS 管理主控台個別佈建資源。
 
 # 網路功能
-Amazon Virtual Private Cloud (Amazon VPC) - 邏輯隔離虛擬網路中啟動 AWS 資源。提供 `VPC Flow Logs` 紀錄進出VPC的IP資訊。
+- `Amazon Virtual Private Cloud (Amazon VPC)` - 邏輯隔離虛擬網路中啟動 AWS 資源。
+- `VPC Flow Logs` - 紀錄進出VPC的IP資訊。
+- `VPC peering` - 用來串聯 `VPC` 的網路連線。
 
 ![mvc](img/VPC.png )
+![mvc](img/VPC_peering.png )
 ## 公開網路連線
 ![mvc](img/4-1.png )
 ## VPN連線
