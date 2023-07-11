@@ -54,10 +54,10 @@ Elastic Load Balancing 是一種可在多個資源 (例如 Amazon EC2 執行個�
 ## AWS 內建服務
 - `Amazon Simple Notification Service (Amazon SNS)` - 發布/訂閱服務，將訊息發布給訂閱者。
 - `Amazon Simple Queue Service (Amazon SQS)` - 訊息佇列服務，應用程式會將訊息傳送到佇列中。使用者或服務會從佇列擷取訊息。
-- `AWS Lambda` - `無伺服器`、`事件推動`的運算服務，無需佈建或管理伺服器即可執行程式碼的服務，只需根據所用運算時間付費。
+- `AWS Lambda` - `無伺服器`、`事件推動`的運算服務，無需佈建或管理伺服器即可執行程式碼的服務，只需根據所用`運算時間付費`。
 - `Amazon Elastic Container Service (Amazon ECS)` - 可高度擴展的高效能容器管理系統，支援 `Docker` 容器。
 - `Amazon Elastic Kubernetes Service (Amazon EKS)` -  AWS 上執行 `Kubernetes`。
-- `AWS Fargate` - 是無伺服器，依用量計費的運算引擎，讓您專注於建置應用程式，而無需管理伺服器。AWS Fargate 與 Amazon Elastic Container Service (ECS) 和 Amazon Elastic Kubernetes Service (EKS) 相容。
+- `AWS Fargate` - 是`無伺服器`，依`用量計費`的運算引擎，讓您專注於建置應用程式，而無需管理伺服器。AWS Fargate 與 Amazon Elastic Container Service (ECS) 和 Amazon Elastic Kubernetes Service (EKS) 相容。
 
 ![mvc](img/2-3.png )
 
